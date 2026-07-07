@@ -1,0 +1,16 @@
+During hacking, you will encounter vast amounts of data—often thousands of lines. How do you find what is actually useful?
+
+7. grep (Global Regular Expression Print)
+In simple terms: Locating a specific word within a large dataset or file.
+
+Practical Example: Extracting only the lines containing "open" from a large list named `nmap_output.txt`:
+Bash
+cat nmap_output.txt | grep "open"
+(Here, the `|` (pipe) symbol means: send the output of the first command to the second command).
+
+8. find (Locating Files)
+In simple terms: Searching the entire computer to find where a specific file is hidden.
+
+Practical Example: Searching the entire system for `.conf` (configuration) files while suppressing unnecessary error messages (using `2>/dev/null` hides the errors):
+Bash
+find / -name "*.conf" 2>/dev/null
