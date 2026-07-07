@@ -1,0 +1,34 @@
+After entering any system, the first thing you need to know is where you are and what is inside the folders.
+
+1. pwd (Print Working Directory)
+Simple Words: To find out, "Which folder am I currently in?"
+
+Practical Example: When you open the terminal and are unsure whether you are in the root directory or the home directory.
+Bash
+pwd
+Expected Output: /home/kali
+
+2. ls (List)
+Simple Words: "What files and folders are hidden inside this folder?"
+Practical Example: When you download a file from a target and want to see where it landed. Always use the `-la` flag so that hidden files (those starting with a `.`) and their permissions are also visible.
+
+Bash
+ls -la
+3. cd (Change Directory)
+Simple Words: To move from one folder to another.
+
+Practical Example: To enter the Desktop folder:
+
+Bash
+cd Desktop/
+Shortcut: Type `cd ..` to go back to the previous folder.
+
+4. mkdir & touch (Creating Folders and Files)
+Simple Words: `mkdir` creates a new folder, and `touch` creates a new empty file.
+
+Practical Example: Creating a new temporary workspace for a lab or CTF:
+
+Bash
+mkdir target_recon
+cd target_recon
+touch ips.txt
