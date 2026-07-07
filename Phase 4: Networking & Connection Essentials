@@ -1,0 +1,14 @@
+Penetration testing is incomplete without network analysis. These commands are used to check connections.
+
+9. ip a (IP Address Check)
+In simple terms: Viewing your machine's IP address (whether via WiFi or Ethernet).
+Practical Example: Determining your subnet so you can scan other computers.
+
+Bash
+ip a
+10. ss -tulpn (Socket Statistics)
+In simple terms: "Who is my computer secretly communicating with, and which path (port) is open?"
+
+Practical Example: Checking if any backdoor or unauthorized service is running on your Kali Linux system:
+Bash
+sudo ss -tulpn
