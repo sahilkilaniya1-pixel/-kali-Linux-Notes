@@ -1,0 +1,16 @@
+In Linux, every file has a specific set of permissions. If you lack the necessary permission, you cannot run a script.
+
+5. chmod (Change Mode)
+In simple terms: Granting permission to run (execute) a file. When you download a tool from GitHub, it won't run until you make it executable.
+
+Practical Example: Making a Python script named `exploit.py` executable:
+Bash
+chmod +x exploit.py
+Now, you can run it by typing `./exploit.py`.
+
+6. sudo (Superuser Do)
+In simple terms: "Execute this command with the privileges of the system administrator (Root)."
+
+Practical Example: Updating Kali Linux (the system will not grant permission without `sudo`):
+Bash
+sudo apt update
